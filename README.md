@@ -1,1 +1,1 @@
-# CodeWars
+My solutions CodeWars tasks
