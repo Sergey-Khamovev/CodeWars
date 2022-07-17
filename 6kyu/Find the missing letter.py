@@ -9,6 +9,8 @@ Example:
 ["O","Q","R","S"] -> "P"
 (Use the English alphabet with 26 letters!)
 """
+
+
 def find_missing_letter(chars):
     asci_list = [ord(char) for char in chars]
     return "".join(chr(asci_list[i] + 1) for i in range(len(asci_list)-1) if asci_list[i+1] - asci_list[i] != 1)
