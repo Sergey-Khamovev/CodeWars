@@ -1,4 +1,4 @@
-a = [1,2,6,4,14,21,112,0,3,3]
+a = [1, 2, 6, 4, 14, 21, 112, 0, 3, 3]
 def buble_sort(list):
     count = 0
     for j in range(len(list)-1):
@@ -7,8 +7,9 @@ def buble_sort(list):
                 list[i], list[i+1] = list[i+1], list[i]
                 count += 1
     return list, count
-b = buble_sort(a)
-print(b)
+
+
+print(buble_sort(a))
 
 def quick_sort(input_list):
     if len(input_list) <= 1:
