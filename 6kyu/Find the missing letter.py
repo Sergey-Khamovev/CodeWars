@@ -7,7 +7,7 @@ Example:
 ['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
 ["a","b","c","d","f"] -> "e"
 ["O","Q","R","S"] -> "P"
-(Use the English alphabet with 26 letters!)
+( Use the English alphabet with 26 letters!)
 """
 
 
