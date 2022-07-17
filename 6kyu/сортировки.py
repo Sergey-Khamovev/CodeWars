@@ -2,13 +2,11 @@ a = [1, 2, 6, 4, 14, 21, 112, 0, 3, 3]
 
 
 def buble_sort(input_list):
-    count = 0
     for j in range(len(input_list) - 1):
         for i in range(len(input_list) - 1):
             if input_list[i] > input_list[i + 1]:
                 input_list[i], input_list[i + 1] = input_list[i + 1], input_list[i]
-                count += 1
-    return input_list, count
+    return input_list
 
 
 print(buble_sort(a))
