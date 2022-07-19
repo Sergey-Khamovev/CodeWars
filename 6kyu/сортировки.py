@@ -1,4 +1,3 @@
-a = [1, 2, 6, 4, 14, 21, 112, 0, 3, 3]
 
 
 def buble_sort(input_list):
@@ -8,8 +7,6 @@ def buble_sort(input_list):
                 input_list[i], input_list[i + 1] = input_list[i + 1], input_list[i]
     return input_list
 
-
-print(buble_sort(a))
 
 def quick_sort(input_list):
     if len(input_list) <= 1:
@@ -21,5 +18,5 @@ def quick_sort(input_list):
     return quick_sort(left)+center+quick_sort(right)
 
 
-print(quick_sort([3, 0, 2, 5, 4]))
+
 
