@@ -20,3 +20,9 @@ def rot13(message):
         else:
             res += message[i]
     return res
+
+def test_rot13(func):
+    assert rot13("Hello!") == "Uryyb!", "Должно быть  'Uryyb!' "
+    assert rot13("Hi") == "Uv", "Должно быть  'Uv' "
+    assert rot13("Sergey") == "Fretrl", "Должно быть  'Fretrl' "
+test_rot13(rot13)
