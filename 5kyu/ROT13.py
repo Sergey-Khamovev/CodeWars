@@ -6,6 +6,7 @@ Create a function that takes a string and returns the string ciphered with Rot13
 characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet
 should be shifted, like in the original Rot13 "implementation".
 """
+
 def rot13(message):
     lower_alphabet = "abcdefghijklmnopqrstuvwxyz"
     upper_alphabet = "".join(i.capitalize() for i in lower_alphabet)
@@ -21,8 +22,3 @@ def rot13(message):
             res += message[i]
     return res
 
-def test_rot13(func):
-    assert rot13("Hello!") == "Uryyb!", "Должно быть  'Uryyb!' "
-    assert rot13("Hi") == "Uv", "Должно быть  'Uv' "
-    assert rot13("Sergey") == "Fretrl", "Должно быть  'Fretrl' "
-test_rot13(rot13)
