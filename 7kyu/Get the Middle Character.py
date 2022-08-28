@@ -14,3 +14,10 @@ def get_middle(s):
     if len(s) % 2 == 0 and len(s) == 2:
         return s
     return get_middle(s[1:-1])
+
+
+firstString = "abcdefghijklmnopqrstuvwxyz"
+secondString = "ijklmnopqrstuvwxyzabcdefgh"
+myword = "abcdefgh"
+ts = myword.maketrans(firstString, secondString)
+print(myword.translate(ts))
